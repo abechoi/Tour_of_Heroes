@@ -7,3 +7,8 @@
     border-radius: 2px;
     margin: 25px;
 }
+
+.link:hover{
+    color: #607d8b;
+    background-color: #eee;
+}
