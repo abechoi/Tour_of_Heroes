@@ -10,7 +10,6 @@
 .heroes li{
     cursor: pointer;
     position: relative;
-    left: 0;
     background-color: #EEE;
     margin: .5em;
     padding: .3em 0;
@@ -24,16 +23,6 @@
     left: .1em;
 }
 
-.heroes li.selected{
-    background-color: #CFD8DC;
-    color: white;
-}
-
-.heroes li.selected:hover{
-    background-color: #BBD8DC;
-    color: white;
-}
-
 .heroes .badge{
     display: inline-block;
     font-size: small;
@@ -45,6 +34,33 @@
     left: -1px;
     top: -4px;
     height: 1.8em;
+    min-width: 16px;
+    text-align: right;
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
+}
+
+button{
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Arial;
+}
+
+button.delete:hover{
+    color: black;
+    opacity: 100%;
+    font-size: medium;
+}
+
+button.delete{
+    position: relative;
+    float: right;
+    opacity: 0%;
+    background-color: transparent;
+    font-size: medium;
+    padding-right: 10px;
 }
